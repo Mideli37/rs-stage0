@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  color: black
+}
+
+.header {
+  background: rgb(237, 242, 236);
+  display: flex;
+  justify-content: space-between;
+  padding: 41px 111px 42px 110px;
+  font-family: Inika;
+}
+
+.navMenu{
+  
+  display: flex;
+  justify-content: space-between;
+  width: 450px;
+}
+.navMenu li{
+  display: inline-block;
+}
+.navMenu a {
+  text-decoration: none;
+  color:black;
+  font-family: Inika;
+  Font-style: Regular;
+  Font-size: 16px;
+  Line-height: 21px;
+  font-weight: 400;
+}
+
+.plantsLogo {
+  padding-top: 11px;
+  display: flex;
+}
+
+.logo{
+  padding: 4px 0 0 1px;
+}
