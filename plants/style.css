@@ -113,3 +113,38 @@ main {
   color: white;
   transition: all 500ms ease;
 }
+
+#about {
+  display: flex;
+  align-items: center;
+  background: white;
+  justify-content: space-between;
+  padding: 87px 109px 90px 109px;
+  
+}
+
+#about h2 {
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  color: rgba(73, 154, 24, 1);
+}
+
+.orangeText {
+  color:#E06733
+}
+
+.about p {
+  line-height: 30px;
+  padding-top: 5px;
+  padding-bottom: 1px;
+}
+
+.about {
+  width: 600px;
+}
+.imgWrapper {
+  padding-top: 7px;
+}
