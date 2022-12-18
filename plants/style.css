@@ -95,17 +95,17 @@ main {
 }
 
 .buttonWrapper {
-  padding-top: 36px;
+  padding-top: 27px;
 }
 
 .buttonLearnMore {
-  text-decoration: none;
   text-transform: uppercase;
   color: rgba(1, 2, 1, 1);
   font-size: 16px;
   border: 2px solid #E06733;
   border-radius: 10px;
   padding: 10px 26px;
+  font-family: 'Inter'
 }
 
 .buttonLearnMore:hover {
