@@ -98,7 +98,7 @@ main {
   padding-top: 27px;
 }
 
-.buttonLearnMore {
+.learnMore{
   text-transform: uppercase;
   color: rgba(1, 2, 1, 1);
   font-size: 16px;
@@ -108,7 +108,8 @@ main {
   font-family: 'Inter'
 }
 
-.buttonLearnMore:hover {
+
+.button:hover {
   background: #E06733;
   color: white;
   transition: all 500ms ease;
@@ -147,4 +148,124 @@ main {
 }
 .imgWrapper {
   padding-top: 7px;
+}
+
+#service {
+  padding: 39px 106px 66px 109px;
+  background-color: #EDF2EC;
+  display: flex;
+  flex-direction: column;
+}
+.service {
+  width: 29%;
+  margin: 0;
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  color: #499A18;
+  
+}
+
+.serviceWrapper {
+  display: flex;
+  width: 100%;
+  justify-content: start;
+}
+
+.serviceButtons {
+  width: 597px;  
+  display: flex;
+  justify-content: space-around;
+  padding: 9px 0px 0px 74px;
+}
+
+.serviceButtons li {
+  display: inline;
+}
+
+.serviceButtons button {
+  width: 161px;
+  height: 50px;
+  padding: 11px 4px 11px 0px;
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #E06733;
+  border: 1px solid #E06733;
+  border-radius: 5px;
+}
+
+.button.lawn {
+  padding-right: 1px;
+}
+
+.button.garden {
+  padding-right: 6px;
+}
+
+.card.main {
+  height: 450px;
+  width: 26.92%;
+}
+.cards.wrapper {
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 1010px;
+  padding: 0px 3px 0px 1px;
+  flex-direction: row;
+
+}
+.cards wrapper {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px 20px 0px 0px;
+  width: auto;
+  height: 350px;
+}
+.card img {
+  width: 100%;
+  height: auto;  
+}
+
+.horizontal img {
+  width: auto;
+  height: 100%;  
+}
+
+.card.info {
+  height: 98px;
+  width: auto;
+  border: 1px solid #E3E1D5;
+  border-radius: 0px 0px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card .head {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #E06733;
+  margin: 9px;
+}
+
+.card .information {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #717171;
+  margin: 5px;
 }
