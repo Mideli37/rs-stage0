@@ -3,8 +3,7 @@ body {
   margin: 0ch;
   margin-left: auto;
   margin-right: auto;
-  color: rgba(99, 96, 96, 1)
-  
+  color: rgba(99, 96, 96, 1);
 }
 
 .header {
@@ -15,27 +14,26 @@ body {
   font-family: Inika;
 }
 
-.navMenu{
-  
+.navMenu {
   display: flex;
   justify-content: space-between;
   width: 450px;
 }
-.navMenu li{
+.navMenu li {
   display: inline-block;
 }
 .navMenu a {
   text-decoration: none;
-  color:rgba(1, 2, 1, 1);
+  color: rgba(1, 2, 1, 1);
   font-family: Inika;
-  Font-style: Regular;
-  Font-size: 16px;
-  Line-height: 21px;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 21px;
   font-weight: 500;
 }
 
 .navMenu a:hover {
-  color: #E06733;
+  color: #e06733;
 }
 
 .plantsLogo {
@@ -43,7 +41,7 @@ body {
   display: flex;
 }
 
-.logo{
+.logo {
   padding: 4px 0 0 1px;
 }
 
@@ -52,7 +50,6 @@ main {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  
 }
 
 #home {
@@ -90,30 +87,20 @@ main {
   padding-top: 7px;
 }
 
-.colortext {
-  color: rgba(73, 154, 24, 1);
-}
-
 .buttonWrapper {
   padding-top: 27px;
 }
 
-.learnMore{
+.learnMore {
   text-transform: uppercase;
   color: rgba(1, 2, 1, 1);
   font-size: 16px;
-  border: 2px solid #E06733;
+  border: 2px solid #e06733;
   border-radius: 10px;
   padding: 10px 26px;
-  font-family: 'Inter'
+  font-family: 'Inter';
 }
 
-
-.button:hover {
-  background: #E06733;
-  color: white;
-  transition: all 500ms ease;
-}
 
 #about {
   display: flex;
@@ -121,7 +108,6 @@ main {
   background: white;
   justify-content: space-between;
   padding: 87px 109px 90px 109px;
-  
 }
 
 #about h2 {
@@ -134,7 +120,7 @@ main {
 }
 
 .orangeText {
-  color:#E06733
+  color: #e06733;
 }
 
 .about p {
@@ -152,7 +138,7 @@ main {
 
 #service {
   padding: 39px 106px 66px 109px;
-  background-color: #EDF2EC;
+  background-color: #edf2ec;
   display: flex;
   flex-direction: column;
 }
@@ -164,8 +150,7 @@ main {
   font-weight: 400;
   font-size: 40px;
   line-height: 52px;
-  color: #499A18;
-  
+  color: #499a18;
 }
 
 .serviceWrapper {
@@ -175,7 +160,7 @@ main {
 }
 
 .serviceButtons {
-  width: 597px;  
+  width: 597px;
   display: flex;
   justify-content: space-around;
   padding: 9px 0px 0px 74px;
@@ -194,8 +179,8 @@ main {
   font-weight: 400;
   font-size: 20px;
   line-height: 26px;
-  color: #E06733;
-  border: 1px solid #E06733;
+  color: #e06733;
+  border: 1px solid #e06733;
   border-radius: 5px;
 }
 
@@ -219,7 +204,6 @@ main {
   height: 1010px;
   padding: 0px 3px 0px 1px;
   flex-direction: row;
-
 }
 .cards wrapper {
   overflow: hidden;
@@ -232,18 +216,18 @@ main {
 }
 .card img {
   width: 100%;
-  height: auto;  
+  height: auto;
 }
 
 .horizontal img {
   width: auto;
-  height: 100%;  
+  height: 100%;
 }
 
 .card.info {
   height: 98px;
   width: auto;
-  border: 1px solid #E3E1D5;
+  border: 1px solid #e3e1d5;
   border-radius: 0px 0px 20px 20px;
   display: flex;
   flex-direction: column;
@@ -256,7 +240,7 @@ main {
   font-weight: 700;
   font-size: 20px;
   line-height: 20px;
-  color: #E06733;
+  color: #e06733;
   margin: 9px;
 }
 
@@ -268,4 +252,106 @@ main {
   line-height: 20px;
   color: #717171;
   margin: 5px;
+}
+
+.prices {
+  padding-top: 6px;
+}
+.prices h2 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #000000;
+}
+
+#price {
+  padding: 0px 109px 108px 109px;
+}
+#price .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordeon {
+  margin-top: 60px;
+  width: 330px;
+  height: 280px;
+  border: 1px solid #e3e1d5;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.price.block {
+  width: 170px;
+  height: 16px;
+  background: #edf2ec;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+  padding: 16px 40px;
+}
+
+.contactus {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.contactus h3 {
+  padding-top: 39px;
+  margin: 0;
+  width: 460px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: right;
+  color: #000000;
+}
+
+.contactus .button {
+  border: 1px solid #e06733;
+  border-radius: 5px;
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  color: #e06733;
+  background-color: white;
+  margin-top: 40px;
+  width: 162px;
+  height: 50px;
+  padding: 1px 4px 0px 0px;
+  margin-bottom: 34px;
+}
+
+.contactus img {
+  position: relative;
+  left: 9px;
+}
+
+
+
+.colortext {
+  color: rgba(73, 154, 24, 1);
+}
+
+.button:hover {
+  background: #e06733;
+  color: white;
+  transition: all 500ms ease;
 }
