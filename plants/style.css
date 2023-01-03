@@ -384,6 +384,43 @@ letter-spacing: 0.05em;
 color: #717171;
 }
 
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 109px;
+  height: 130px;
+  align-items: center;
+}
+
+.github {
+  width: 168px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.socials {
+  width: 189px;
+  padding-top: 4px;
+}
+
+.soc {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.rs {
+  padding-left: 19px;
+}
+.soc li {
+  list-style: none;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #000000;
+}
 .woman {
   padding-top: 23px;
 }
