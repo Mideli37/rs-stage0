@@ -5,7 +5,9 @@ body {
   margin-right: auto;
   color: rgba(99, 96, 96, 1);
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .header {
   background: rgb(237, 242, 236);
   display: flex;
@@ -21,6 +23,7 @@ body {
 }
 .navMenu li {
   display: inline-block;
+  cursor: pointer
 }
 .navMenu a {
   text-decoration: none;
@@ -301,6 +304,7 @@ main {
   line-height: 20px;
   color: #000000;
   padding: 16px 40px;
+  cursor: pointer
 }
 
 .contactus {
@@ -382,6 +386,7 @@ line-height: 40px;
 letter-spacing: 0.05em;
 
 color: #717171;
+cursor: pointer
 }
 
 .footer {
@@ -427,7 +432,9 @@ color: #717171;
 .colortext {
   color: rgba(73, 154, 24, 1);
 }
-
+.button {
+  cursor: pointer
+}
 .button:hover {
   background: #e06733;
   color: white;
