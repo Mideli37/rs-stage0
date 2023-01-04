@@ -1,9 +1,7 @@
 body {
-  width: 1440px;
   margin: 0ch;
-  margin-left: auto;
-  margin-right: auto;
   color: rgba(99, 96, 96, 1);
+  overflow-y: overlay;
 }
 html {
   scroll-behavior: smooth;
@@ -11,11 +9,15 @@ html {
 .header {
   background: rgb(237, 242, 236);
   display: flex;
+  justify-content: center
+}
+.headerWrapper {
+  width: 1219px;
+  display: flex;
   justify-content: space-between;
   padding: 41px 111px 40px 110px;
   font-family: Inika;
 }
-
 .navMenu {
   display: flex;
   justify-content: space-between;
@@ -66,6 +68,7 @@ main {
   width: 1239.5px;
   display: flex;
   justify-content: space-between;
+  
 }
 
 .homeInfo {
@@ -103,14 +106,19 @@ main {
   padding: 10px 26px;
   font-family: 'Inter';
 }
-
+.aboutWrapper {
+  width: 1221px;
+  display: flex;
+  padding: 87px 109px 90px 109px;
+  justify-content: space-between;
+}
 
 #about {
   display: flex;
   align-items: center;
   background: white;
-  justify-content: space-between;
-  padding: 87px 109px 90px 109px;
+  justify-content: center;
+  
 }
 
 #about h2 {
@@ -134,16 +142,24 @@ main {
 
 .about {
   width: 600px;
+  padding-top: 42px;
 }
 .imgWrapper {
   padding-top: 7px;
 }
 
-#service {
-  padding: 39px 106px 66px 109px;
-  background-color: #edf2ec;
+.serviceWrapperr {
+  width: 1225px;
   display: flex;
   flex-direction: column;
+  padding: 39px 106px 66px 109px;
+}
+
+#service {
+  display: flex;
+  justify-content: center;
+  background-color: #edf2ec;
+  
 }
 .service {
   width: 29%;
@@ -270,11 +286,14 @@ main {
 }
 
 #price {
-  padding: 0px 109px 108px 109px;
+  display: flex;
+  justify-content: center;
 }
 #price .wrapper {
   display: flex;
   justify-content: space-between;
+  padding: 0px 109px 108px 109px;
+  width: 1222px;
 }
 
 .accordeon {
@@ -348,11 +367,17 @@ main {
   left: 9px;
 }
 
-#contacts {
-  background-color:  #EDF2EC;
+.contactsWrapper {
+  width: 1222px;
   display: flex;
   justify-content: space-between;
   padding: 26px 109px 0px 109px;
+}
+
+#contacts {
+  background-color:  #EDF2EC;
+  display: flex;
+  justify-content: center
 }
 
 #contacts h2 {
@@ -389,12 +414,19 @@ color: #717171;
 cursor: pointer
 }
 
-.footer {
+.footerWrapper {
   display: flex;
   justify-content: space-between;
   padding: 0px 109px;
   height: 130px;
   align-items: center;
+  width: 1222px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+ 
 }
 
 .github {
@@ -413,6 +445,7 @@ cursor: pointer
   justify-content: space-between;
   margin: 0;
   padding: 0;
+  padding-left: 1px;
 }
 
 .rs {
