@@ -121,7 +121,7 @@ main {
 }
 
 #about h2 {
-  font-family: 'Inika, ' Segoe UI ', Tahoma, Geneva, Verdana, sans-serif';
+  font-family: Inika, ' Segoe UI ', Tahoma, Geneva, Verdana, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -162,7 +162,7 @@ main {
 .service {
   width: 29%;
   margin: 0;
-  font-family: 'Inika, ' Segoe UI ', Tahoma, Geneva, Verdana, sans-serif';
+  font-family: Inika, ' Segoe UI ', Tahoma, Geneva, Verdana, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
@@ -379,7 +379,7 @@ main {
 }
 
 #contacts h2 {
-  font-family: 'Inika, ' Segoe UI ', Tahoma, Geneva, Verdana, sans-serif';
+  font-family: Inika, ' Segoe UI ', Tahoma, Geneva, Verdana, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
