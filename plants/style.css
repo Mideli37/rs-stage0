@@ -2,7 +2,7 @@ body {
   margin: 0ch;
   color: rgba(99, 96, 96, 1);
   overflow-y: overlay;
-  min-width: 1440px;
+ 
 }
 html {
   scroll-behavior: smooth;
@@ -147,7 +147,7 @@ main {
   padding-top: 7px;
 }
 
-.serviceWrapperr {
+.serviceWrapper {
   width: 1225px;
   display: flex;
   flex-direction: column;
@@ -170,7 +170,7 @@ main {
   color: #499a18;
 }
 
-.serviceWrapper {
+.serviceContainer {
   display: flex;
   width: 100%;
   justify-content: start;
@@ -493,4 +493,193 @@ main {
   background: #e06733;
   color: white;
   transition: all 500ms ease;
+}
+
+@media (max-width: 1282px) {
+/*   body {
+    width: 768px;
+  } */
+  
+  .headerWrapper {
+    width: 667px;
+    padding: 34px 51px 20px 48px;
+  }
+
+  #home .wrapper {
+    flex-direction: row-reverse;
+    width: 668.5px;
+  }
+
+  .leafs img {
+    height: 265px;
+    position: relative;
+    left: 3px;
+  }
+
+  .welcome {
+    padding-top: 9px;
+    font-size: 35px;
+    margin: 0;
+  }
+
+  .homeInfo p {
+  font-size: 16px;
+  line-height: 25px;
+  padding: 15px 0px 0px 5px;
+  }
+
+  .homeInfo {
+    width: 349px;
+    padding: 0;
+  }
+
+  #home {
+    padding: 41px 0 70px;
+  }
+
+  .buttonWrapper {
+    padding-top: 19px;
+}
+
+.aboutWrapper {
+  flex-direction: column;
+  display: flex;
+  padding: 0px 4px 90px 0px;
+  align-items: center;
+}
+
+#about h2 {
+  font-size: 35px;
+  line-height: 46px;
+  text-align: center;
+  width: 528px;
+  padding-left: 2px;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 665px;
+  padding-top: 11px;
+}
+
+.about p {
+  padding-top: 1px;
+}
+
+.imgWrapper img {
+  height: 258px;
+}
+
+.imgWrapper {
+  padding-top: 47px;
+  padding-left: 3px;
+}
+
+.card.main {
+  height: 450px;
+  width: 42%;
+  max-width: 50%;
+}
+
+.serviceContainer {
+  flex-direction: column;
+  
+}
+
+.service {
+  font-size: 35px;
+  line-height: 46px;
+  width: 50%;
+}
+
+.serviceWrapper {
+  padding: 60px 47px 66px 50px;
+}
+
+.serviceButtons {
+  padding: 22px 0px 0px 0px;
+  justify-content: space-between;
+  width: 559px;
+}
+
+.cards.wrapper {
+  margin-top: 19px;
+  height: auto;
+  gap: 38px 0;
+  padding-bottom: 5px;
+}
+
+.card .information {
+  padding: 0px 33px;
+  text-align: center;
+}
+
+.prices h2 {
+  font-size: 35px;
+  line-height: 42px;
+  padding-left: 14px;
+}
+
+.contactus h3 {
+  font-size: 25px;
+  line-height: 35px;
+   width: 290px;
+}
+
+#price .wrapper {
+  justify-content: space-between;
+  padding: 4px 49px 81px 51px;
+}
+
+.contactus {
+  padding-top: 97px;
+}
+
+.contactus .button {
+  margin-top: 27px;
+  margin-bottom: 30px;
+}
+
+.contactsWrapper {
+  flex-direction: column;
+  align-items: center;
+  padding: 7px 0px 0px 0px;
+}
+
+#contacts h2 {
+  margin-left: 0;
+}
+
+.city {
+  margin-top: 66px;
+}
+.woman {
+  order: 2;
+  height: 248px;
+  width: auto;
+  padding-top: 250px;
+  padding-left: 20px;
+}
+
+.footerWrapper {
+  flex-direction: column;
+  padding-top: 33px;
+  height: 126px;
+}
+
+.github {
+  padding-right: 4px;
+  width: 171px;
+}
+.rs{
+  padding-left: 0;
+  margin-bottom: 5px;
+  margin-right: 1px;
+}
+
+.soc {
+  padding-left: 0;
+}
 }
