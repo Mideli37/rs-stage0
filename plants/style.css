@@ -2,7 +2,6 @@ body {
   margin: 0ch;
   color: rgba(99, 96, 96, 1);
   overflow-y: overlay;
- 
 }
 html {
   scroll-behavior: smooth;
@@ -49,6 +48,10 @@ html {
 
 .logo {
   padding: 4px 0 0 1px;
+}
+
+.burger {
+  display: none;
 }
 
 main {
@@ -496,10 +499,10 @@ main {
 }
 
 @media (max-width: 1282px) {
-/*   body {
+  /*   body {
     width: 768px;
   } */
-  
+
   .headerWrapper {
     width: 667px;
     padding: 34px 51px 20px 48px;
@@ -523,9 +526,9 @@ main {
   }
 
   .homeInfo p {
-  font-size: 16px;
-  line-height: 25px;
-  padding: 15px 0px 0px 5px;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 15px 0px 0px 5px;
   }
 
   .homeInfo {
@@ -539,147 +542,371 @@ main {
 
   .buttonWrapper {
     padding-top: 19px;
-}
+  }
 
-.aboutWrapper {
-  flex-direction: column;
-  display: flex;
-  padding: 0px 4px 90px 0px;
-  align-items: center;
-}
+  .aboutWrapper {
+    flex-direction: column;
+    display: flex;
+    padding: 0px 4px 90px 0px;
+    align-items: center;
+  }
 
-#about h2 {
-  font-size: 35px;
-  line-height: 46px;
-  text-align: center;
-  width: 528px;
-  padding-left: 2px;
-}
+  #about h2 {
+    font-size: 35px;
+    line-height: 46px;
+    text-align: center;
+    width: 528px;
+    padding-left: 2px;
+  }
 
-.about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 665px;
-  padding-top: 11px;
-}
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 665px;
+    padding-top: 11px;
+  }
 
-.about p {
-  padding-top: 1px;
-}
+  .about p {
+    padding-top: 1px;
+  }
 
-.imgWrapper img {
-  height: 258px;
-}
+  .imgWrapper img {
+    height: 258px;
+  }
 
-.imgWrapper {
-  padding-top: 47px;
-  padding-left: 3px;
-}
+  .imgWrapper {
+    padding-top: 47px;
+    padding-left: 3px;
+  }
 
-.card.main {
-  height: 450px;
-  width: 42%;
-  max-width: 50%;
-}
+  .card.main {
+    height: 450px;
+    width: 42%;
+    max-width: 50%;
+  }
 
-.serviceContainer {
-  flex-direction: column;
-  
-}
+  .serviceContainer {
+    flex-direction: column;
+  }
 
-.service {
-  font-size: 35px;
-  line-height: 46px;
-  width: 50%;
-}
+  .service {
+    font-size: 35px;
+    line-height: 46px;
+    width: 50%;
+  }
 
-.serviceWrapper {
-  padding: 60px 47px 66px 50px;
-}
+  .serviceWrapper {
+    padding: 60px 47px 66px 50px;
+  }
 
-.serviceButtons {
-  padding: 22px 0px 0px 0px;
-  justify-content: space-between;
-  width: 559px;
-}
+  .serviceButtons {
+    padding: 22px 0px 0px 0px;
+    justify-content: space-between;
+    width: 559px;
+  }
 
-.cards.wrapper {
-  margin-top: 19px;
-  height: auto;
-  gap: 38px 0;
-  padding-bottom: 5px;
-}
+  .cards.wrapper {
+    margin-top: 19px;
+    height: auto;
+    gap: 38px 0;
+    padding-bottom: 5px;
+  }
 
-.card .information {
-  padding: 0px 33px;
-  text-align: center;
-}
+  .card .information {
+    padding: 0px 33px;
+    text-align: center;
+  }
 
-.prices h2 {
-  font-size: 35px;
-  line-height: 42px;
-  padding-left: 14px;
-}
+  .prices h2 {
+    font-size: 35px;
+    line-height: 42px;
+    padding-left: 14px;
+  }
 
-.contactus h3 {
-  font-size: 25px;
-  line-height: 35px;
-   width: 290px;
-}
+  .contactus h3 {
+    font-size: 25px;
+    line-height: 35px;
+    width: 290px;
+  }
 
-#price .wrapper {
-  justify-content: space-between;
-  padding: 4px 49px 81px 51px;
-}
+  #price .wrapper {
+    justify-content: space-between;
+    padding: 4px 49px 81px 51px;
+  }
 
-.contactus {
-  padding-top: 97px;
-}
+  .contactus {
+    padding-top: 97px;
+  }
 
-.contactus .button {
-  margin-top: 27px;
-  margin-bottom: 30px;
-}
+  .contactus .button {
+    margin-top: 27px;
+    margin-bottom: 30px;
+  }
 
-.contactsWrapper {
-  flex-direction: column;
-  align-items: center;
-  padding: 7px 0px 0px 0px;
-}
+  .contactsWrapper {
+    flex-direction: column;
+    align-items: center;
+    padding: 7px 0px 0px 0px;
+  }
 
-#contacts h2 {
-  margin-left: 0;
-}
+  #contacts h2 {
+    margin-left: 0;
+  }
 
-.city {
-  margin-top: 66px;
-}
-.woman {
-  order: 2;
-  height: 248px;
-  width: auto;
-  padding-top: 250px;
-  padding-left: 20px;
-}
+  .city {
+    margin-top: 66px;
+  }
+  .woman {
+    order: 2;
+    height: 248px;
+    width: auto;
+    padding-top: 250px;
+    padding-left: 20px;
+  }
 
-.footerWrapper {
-  flex-direction: column;
-  padding-top: 33px;
-  height: 126px;
-}
+  .footerWrapper {
+    flex-direction: column;
+    padding-top: 33px;
+    height: 126px;
+  }
 
-.github {
-  padding-right: 4px;
-  width: 171px;
-}
-.rs{
-  padding-left: 0;
-  margin-bottom: 5px;
-  margin-right: 1px;
-}
+  .github {
+    padding-right: 4px;
+    width: 171px;
+  }
+  .rs {
+    padding-left: 0;
+    margin-bottom: 5px;
+    margin-right: 1px;
+  }
 
-.soc {
-  padding-left: 0;
+  .soc {
+    padding-left: 0;
+  }
 }
+@media (max-width: 722px) {
+  .navigation {
+    display: none;
+  }
+
+  .burger {
+    display: initial;
+    padding-top: 9px;
+  }
+
+  .headerWrapper {
+    padding: 25px 25px 20px 24px;
+  }
+
+  .leafs {
+    display: none;
+  }
+
+  #home {
+    padding: 28px 0 24px;
+  }
+
+  #home .wrapper {
+    display: unset;
+    padding: 0px 9px 0px 25px;
+    width: 100%;
+  }
+  .welcome {
+    font-size: 25px;
+    line-height: 35px;
+  }
+  .homeInfo {
+    width: 100%;
+  }
+
+  .homeInfo p {
+    padding: 4px 0px 0px 0px;
+  }
+  .buttonWrapper {
+    padding-top: 10px;
+  }
+
+  .learnMore {
+    font-size: 10px;
+    line-height: 20px;
+    padding: 5px 16px;
+  }
+
+  .aboutWrapper {
+    width: 100%;
+    padding-right: 3px;
+    padding-bottom: 22px;
+  }
+
+  #about h2 {
+    font-size: 25px;
+    line-height: 33px;
+    text-align: center;
+    width: 81%;
+    padding-left: 2px;
+    margin-bottom: 12px;
+  }
+
+  .about {
+    width: 87%;
+    padding-top: 9px;
+  }
+
+  .about p {
+    font-size: 15px;
+    line-height: 25px;
+    margin: 0;
+    padding-bottom: 0;
+  }
+
+  .imgWrapper {
+    padding-top: 0;
+  }
+  .imgWrapper img {
+    height: 155px;
+  }
+
+  .service {
+    font-size: 25px;
+    line-height: 33px;
+    width: 60%;
+  }
+
+  .serviceWrapper {
+    padding: 30px 12px 27px 12px;
+    width: 87%;
+  }
+
+  .serviceButtons {
+    flex-wrap: wrap;
+    padding: 18px 0px 0px 0px;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px 10px;
+    justify-content: flex-start;
+  }
+
+  .serviceButtons button {
+    width: 121px;
+    height: 35px;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 0;
+  }
+
+  .button.garden {
+    padding-right: 0px;
+  }
+
+  .cards.wrapper {
+    align-items: center;
+    padding: 0px 25px;
+    gap: 34px 0;
+  }
+
+  .prices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+    padding: 0 11px 0 10px;
+  }
+
+  .prices h2 {
+    font-size: 25px;
+    line-height: 30px;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .accordeon {
+    padding: 17px 0;
+    margin-top: 17px;
+    width: 221px;
+    height: 199px;
+  }
+
+  .contactus {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-right: 1px;
+    padding-bottom: 10px;
+  }
+
+  #price .wrapper {
+    flex-direction: column;
+    width: 300px;
+    padding: 4px 0px 0 3px;
+  }
+
+  .contactus img {
+    display: none;
+  }
+
+  .contactus h3 {
+    font-size: 20px;
+    line-height: 35px;
+    padding-top: 0;
+    text-align: center;
+    width: 234px;
+  }
+
+  .contactus .button {
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 20px;
+    width: 120px;
+    height: 35px;
+  }
+  .price.block {
+    font-size: 15px;
+    line-height: 20px;
+    padding: 18px 38px 18px 29px;
+    width: 111px;
+  }
+
+  .card.main {
+    height: 450px;
+    width: 100%;
+    min-width: 60%;
+    max-width: unset;
+  }
+
+  #contacts h2 {
+    margin: 0;
+    margin-top: 18px;
+    font-size: 25px;
+    line-height: 33px;
+  }
+
+  .contactsWrapper {
+    padding: 7px 3px 0px 0px;
+  }
+
+  .city {
+    width: 80%;
+    margin-top: 81px;
+    padding: 0px 21px 0px 20px;
+  }
+
+  .woman {
+    height: 125px;
+    width: auto;
+    padding-top: 131px;
+    padding-right: 21px;
+  }
+  .footerWrapper {
+    padding: 22px 0px 0px 0px;
+    height: 113px;
+  }
+
+  .rs {
+    margin: 0;
+  }
+
+  .socials {
+    padding: 0;
+  }
 }
