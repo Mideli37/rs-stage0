@@ -2,7 +2,6 @@ body {
   margin: 0ch;
   color: rgba(99, 96, 96, 1);
   overflow-y: overlay;
-  min-width: 1440px;
 }
 html {
   scroll-behavior: smooth;
@@ -13,6 +12,7 @@ html {
   justify-content: center;
 }
 .headerWrapper {
+  z-index: 1;
   width: 1219px;
   display: flex;
   justify-content: space-between;
@@ -24,10 +24,59 @@ html {
   justify-content: space-between;
   width: 450px;
 }
+
+.burgerNavigation {
+  top: 93px;
+  position: absolute;
+  left: 100%;
+  right: 0;
+  background: rgba(220, 233, 217, 1);
+  overflow: hidden;
+  transition: all 300ms ease;
+}
+
+.burgerNavMenu {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  margin: 0;
+}
+
+.burgerNavMenu li {
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.burgerNavMenu li:hover {
+  background: rgba(193, 230, 152, 1);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  background: rgba(0, 128, 128, 0);
+  width: 100%;
+  height: 100%;
+}
+
 .navMenu li {
   display: inline-block;
   cursor: pointer;
 }
+
+.burgerNavMenu a {
+  text-decoration: none;
+  color: #717171;
+  font-family: Inika, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 500;
+  display: block;
+}
+
 .navMenu a {
   text-decoration: none;
   color: rgba(1, 2, 1, 1);
@@ -49,6 +98,10 @@ html {
 
 .logo {
   padding: 4px 0 0 1px;
+}
+
+.burgerIcon {
+  display: none;
 }
 
 main {
@@ -147,7 +200,7 @@ main {
   padding-top: 7px;
 }
 
-.serviceWrapperr {
+.serviceWrapper {
   width: 1225px;
   display: flex;
   flex-direction: column;
@@ -170,7 +223,7 @@ main {
   color: #499a18;
 }
 
-.serviceWrapper {
+.serviceContainer {
   display: flex;
   width: 100%;
   justify-content: start;
@@ -493,4 +546,430 @@ main {
   background: #e06733;
   color: white;
   transition: all 500ms ease;
+}
+
+@media (max-width: 1282px) {
+  /*   body {
+    width: 768px;
+  } */
+
+  .headerWrapper {
+    width: 667px;
+    padding: 34px 51px 20px 48px;
+  }
+
+  #home .wrapper {
+    flex-direction: row-reverse;
+    width: 668.5px;
+  }
+
+  .leafs img {
+    height: 265px;
+    position: relative;
+    left: 3px;
+  }
+
+  .welcome {
+    padding-top: 9px;
+    font-size: 35px;
+    margin: 0;
+  }
+
+  .homeInfo p {
+    font-size: 16px;
+    line-height: 25px;
+    padding: 15px 0px 0px 5px;
+  }
+
+  .homeInfo {
+    width: 349px;
+    padding: 0;
+  }
+
+  #home {
+    padding: 41px 0 70px;
+  }
+
+  .buttonWrapper {
+    padding-top: 19px;
+  }
+
+  .aboutWrapper {
+    flex-direction: column;
+    display: flex;
+    padding: 0px 4px 90px 0px;
+    align-items: center;
+  }
+
+  #about h2 {
+    font-size: 35px;
+    line-height: 46px;
+    text-align: center;
+    width: 528px;
+    padding-left: 2px;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 665px;
+    padding-top: 11px;
+  }
+
+  .about p {
+    padding-top: 1px;
+  }
+
+  .imgWrapper img {
+    height: 258px;
+  }
+
+  .imgWrapper {
+    padding-top: 47px;
+    padding-left: 3px;
+  }
+
+  .card.main {
+    height: 450px;
+    width: 42%;
+    max-width: 50%;
+  }
+
+  .serviceContainer {
+    flex-direction: column;
+  }
+
+  .service {
+    font-size: 35px;
+    line-height: 46px;
+    width: 50%;
+  }
+
+  .serviceWrapper {
+    padding: 60px 47px 66px 50px;
+  }
+
+  .serviceButtons {
+    padding: 22px 0px 0px 0px;
+    justify-content: space-between;
+    width: 559px;
+  }
+
+  .cards.wrapper {
+    margin-top: 19px;
+    height: auto;
+    gap: 38px 0;
+    padding-bottom: 5px;
+  }
+
+  .card .information {
+    padding: 0px 33px;
+    text-align: center;
+  }
+
+  .prices h2 {
+    font-size: 35px;
+    line-height: 42px;
+    padding-left: 14px;
+  }
+
+  .contactus h3 {
+    font-size: 25px;
+    line-height: 35px;
+    width: 290px;
+  }
+
+  #price .wrapper {
+    justify-content: space-between;
+    padding: 4px 49px 81px 51px;
+  }
+
+  .contactus {
+    padding-top: 97px;
+  }
+
+  .contactus .button {
+    margin-top: 27px;
+    margin-bottom: 30px;
+  }
+
+  .contactsWrapper {
+    flex-direction: column;
+    align-items: center;
+    padding: 7px 0px 0px 0px;
+  }
+
+  #contacts h2 {
+    margin-left: 0;
+  }
+
+  .city {
+    margin-top: 66px;
+  }
+  .woman {
+    order: 2;
+    height: 248px;
+    width: auto;
+    padding-top: 250px;
+    padding-left: 20px;
+  }
+
+  .footerWrapper {
+    flex-direction: column;
+    padding-top: 33px;
+    height: 126px;
+  }
+
+  .github {
+    padding-right: 4px;
+    width: 171px;
+  }
+  .rs {
+    padding-left: 0;
+    margin-bottom: 5px;
+    margin-right: 1px;
+  }
+
+  .soc {
+    padding-left: 0;
+  }
+}
+@media (max-width: 722px) {
+  .navigation {
+    display: none;
+  }
+
+  .burgerIcon {
+    display: initial;
+    cursor: pointer;
+    user-select: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 9px;
+  }
+
+  .cross {
+    display: none;
+    font-size: 23px;
+    margin: 0px 13px 0px 0px;
+    position: relative;
+    bottom: 4px;
+    left: 13px;
+  }
+
+  .headerWrapper {
+    padding: 25px 25px 20px 24px;
+  }
+
+  .leafs {
+    display: none;
+  }
+
+  #home {
+    padding: 19px 0 24px;
+  }
+
+  #home .wrapper {
+    display: unset;
+    padding: 0px 9px 0px 25px;
+    width: 100%;
+  }
+  .welcome {
+    font-size: 25px;
+    line-height: 35px;
+  }
+  .homeInfo {
+    width: 100%;
+  }
+
+  .homeInfo p {
+    padding: 4px 0px 0px 0px;
+  }
+  .buttonWrapper {
+    padding-top: 10px;
+  }
+
+  .learnMore {
+    font-size: 10px;
+    line-height: 20px;
+    padding: 5px 16px;
+  }
+
+  .aboutWrapper {
+    width: 100%;
+    padding-right: 3px;
+    padding-bottom: 22px;
+  }
+
+  #about h2 {
+    font-size: 25px;
+    line-height: 33px;
+    text-align: center;
+    width: 81%;
+    padding-left: 2px;
+    margin-bottom: 12px;
+  }
+
+  .about {
+    width: 87%;
+    padding-top: 9px;
+  }
+
+  .about p {
+    font-size: 15px;
+    line-height: 25px;
+    margin: 0;
+    padding-bottom: 0;
+  }
+
+  .imgWrapper {
+    padding-top: 0;
+  }
+  .imgWrapper img {
+    height: 155px;
+  }
+
+  .service {
+    font-size: 25px;
+    line-height: 33px;
+    width: 60%;
+  }
+
+  .serviceWrapper {
+    padding: 30px 12px 27px 12px;
+    width: 87%;
+  }
+
+  .serviceButtons {
+    flex-wrap: wrap;
+    padding: 18px 0px 0px 0px;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px 10px;
+    justify-content: flex-start;
+  }
+
+  .serviceButtons button {
+    width: 121px;
+    height: 35px;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 0;
+  }
+
+  .button.garden {
+    padding-right: 0px;
+  }
+
+  .cards.wrapper {
+    align-items: center;
+    padding: 0px 25px;
+    gap: 34px 0;
+  }
+
+  .prices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+    padding: 0 11px 0 10px;
+  }
+
+  .prices h2 {
+    font-size: 25px;
+    line-height: 30px;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .accordeon {
+    padding: 17px 0;
+    margin-top: 17px;
+    width: 221px;
+    height: 199px;
+  }
+
+  .contactus {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-right: 1px;
+    padding-bottom: 10px;
+  }
+
+  #price .wrapper {
+    flex-direction: column;
+    width: 300px;
+    padding: 4px 0px 0 3px;
+  }
+
+  .contactus img {
+    display: none;
+  }
+
+  .contactus h3 {
+    font-size: 20px;
+    line-height: 35px;
+    padding-top: 0;
+    text-align: center;
+    width: 234px;
+  }
+
+  .contactus .button {
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 20px;
+    width: 120px;
+    height: 35px;
+  }
+  .price.block {
+    font-size: 15px;
+    line-height: 20px;
+    padding: 18px 38px 18px 29px;
+    width: 111px;
+  }
+
+  .card.main {
+    height: 450px;
+    width: 100%;
+    min-width: 60%;
+    max-width: unset;
+  }
+
+  #contacts h2 {
+    margin: 0;
+    margin-top: 18px;
+    font-size: 25px;
+    line-height: 33px;
+  }
+
+  .contactsWrapper {
+    padding: 7px 3px 0px 0px;
+  }
+
+  .city {
+    width: 80%;
+    margin-top: 81px;
+    padding: 0px 21px 0px 20px;
+  }
+
+  .woman {
+    height: 125px;
+    width: auto;
+    padding-top: 131px;
+    padding-right: 21px;
+  }
+  .footerWrapper {
+    padding: 22px 0px 0px 0px;
+    height: 113px;
+  }
+
+  .rs {
+    margin: 0;
+  }
+
+  .socials {
+    padding: 0;
+  }
 }
