@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
   <link href="style.css" rel="stylesheet" type="text/css">
   <link rel="icon" href="./images/favicon/favicon.ico" type="image/x-icon">
   <script src="./index.js"></script>
@@ -13,30 +17,56 @@
 <body>
   <header class="header">
     <div class="headerWrapper">
-    <div class="plantsLogo">
-      <img src="./images/logo_vector.svg" alt="logo" height="21">
-      <span class="logo">Plants</span>
+      <div class="plantsLogo">
+        <img src="./images/logo_vector.svg" alt="logo" height="21">
+        <span class="logo">Plants</span>
+      </div>
+      <nav class="navigation">
+        <ul class="navMenu">
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#about">About&nbsp;us</a>
+          </li>
+          <li>
+            <a href="#service">Service</a>
+          </li>
+          <li>
+            <a href="#price">Price</a>
+          </li>
+          <li>
+            <a href="#contacts">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="burgerIcon" onclick="burgerToggle()">
+
+        <img src="./images/burger.svg" alt="burger">
+        <span class="cross">&times</span>
+      </div>
+      <nav class="burgerNavigation" onclick="burgerToggle()">
+        <ul class="burgerNavMenu">
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#about">About&nbsp;us</a>
+          </li>
+          <li>
+            <a href="#service">Service</a>
+          </li>
+          <li>
+            <a href="#price">Price</a>
+          </li>
+          <li>
+            <a href="#contacts">Contacts</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <nav class="navigation">
-      <ul class="navMenu">
-        <li>
-          <a href="#home">Home</a>
-        </li>
-        <li>
-          <a href="#about">About us</a>
-        </li>
-        <li>
-          <a href="#service">Service</a>
-        </li>
-        <li>
-          <a href="#price">Price</a>
-        </li>
-        <li>
-          <a href="#contacts">Contacts</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
+    <div class="modal" onclick="burgerToggle()">
+    </div>
   </header>
   <main>
     <section id="home">
@@ -54,71 +84,77 @@
     </section>
     <section id="about">
       <div class="aboutWrapper">
-      <div class="about">
-        <h2>We are <span class="orangeText">professional experienced</span> gardeners</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-          industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-          electronic typesetting, remaining essentially unchanged. </p>
+        <div class="about">
+          <h2>We are <span class="orangeText">professional experienced</span> gardeners</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. </p>
+        </div>
+        <div class="imgWrapper"><img src="./images/houseplant1.png" alt="FlowerPot" height="479"></div>
       </div>
-      <div class="imgWrapper"><img src="./images/houseplant1.png" alt="FlowerPot" height="479"></div>
-    </div>
     </section>
     <section id="service">
-      <div class="serviceWrapperr">
       <div class="serviceWrapper">
-        <h2 class="service">Service and our projects</h2>
-        <ul class="serviceButtons">
-          <li><button class="button garden">Gardens</button></li>
-          <li><button class="button lawn">Lawn</button></li>
-          <li><button class="button">Planting</button></li>
-        </ul>
+        <div class="serviceContainer">
+          <h2 class="service">Service and our projects</h2>
+          <ul class="serviceButtons">
+            <li><button class="button garden">Gardens</button></li>
+            <li><button class="button lawn">Lawn</button></li>
+            <li><button class="button">Planting</button></li>
+          </ul>
+        </div>
+        <div class="cards wrapper">
+          <div class="card main">
+            <div class='cardwrapper'><img src="./images/6de04c897a8daf032bf3292da6d8699d(1).png" alt="gardenCare"
+                width="329"></div>
+            <div class="card info">
+              <p class="head">Garden care</p>
+              <p class="information">Lorem Ipsum has been the industry</p>
+            </div>
+          </div>
+          <div class="card main">
+            <div class="cardwrapper"><img src="./images/2a46be76f2806c50e195de9a7b2788aa.png" alt="gardenCare"
+                width="329"></div>
+            <div class="card info">
+              <p class="head">Planting</p>
+              <p class="information">Lorem Ipsum has been the industry</p>
+            </div>
+          </div>
+          <div class="card horizontal main">
+            <div class="cardwrapper"><img src="./images/7040ed17ea2c711e2a6cfe1162e75d85.png" alt="gardenCare"
+                width="329"></div>
+            <div class="card info">
+              <p class="head">Lawn care&nbsp;</p>
+              <p class="information">Lorem Ipsum has been the industry</p>
+            </div>
+          </div>
+          <div class="card main">
+            <div class="cardwrapper"><img src="./images/b756fddc5eb798268d426b809f663b1c.png" alt="gardenCare"
+                width="329"></div>
+            <div class="card info">
+              <p class="head">Planting</p>
+              <p class="information">Lorem Ipsum has been the industry</p>
+            </div>
+          </div>
+          <div class="card main">
+            <div class="cardwrapper"><img src="./images/e9d9ba1b52a2ae2d023a351d5a1b1e1d.png" alt="gardenCare"
+                width="329"></div>
+            <div class="card info">
+              <p class="head">Garden care</p>
+              <p class="information">Lorem Ipsum has been the industry</p>
+            </div>
+          </div>
+          <div class="card main">
+            <div class="cardwrapper"><img src="./images/48b0006857ce6af6e00ce412edf8ff18(1).png" alt="gardenCare"
+                width="329"> </div>
+            <div class="card info">
+              <p class="head">Planting</p>
+              <p class="information">Lorem Ipsum has been the industry</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="cards wrapper">
-        <div class="card main">
-          <div class='cardwrapper'><img src="./images/6de04c897a8daf032bf3292da6d8699d(1).png" alt="gardenCare" width="329"></div>
-          <div class="card info">
-            <p class="head">Garden care</p>
-            <p class="information">Lorem Ipsum has been the industry</p>
-          </div>
-        </div>
-        <div class="card main">
-          <div class="cardwrapper"><img src="./images/2a46be76f2806c50e195de9a7b2788aa.png" alt="gardenCare" width="329"></div>
-          <div class="card info">
-            <p class="head">Planting</p>
-            <p class="information">Lorem Ipsum has been the industry</p>
-          </div>
-        </div>
-        <div class="card horizontal main">
-          <div class="cardwrapper"><img src="./images/7040ed17ea2c711e2a6cfe1162e75d85.png" alt="gardenCare" width="329"></div>
-          <div class="card info">
-            <p class="head">Lawn care&nbsp;</p>
-            <p class="information">Lorem Ipsum has been the industry</p>
-          </div>
-        </div>
-        <div class="card main">
-          <div class="cardwrapper"><img src="./images/b756fddc5eb798268d426b809f663b1c.png" alt="gardenCare" width="329"></div>
-          <div class="card info">
-            <p class="head">Planting</p>
-            <p class="information">Lorem Ipsum has been the industry</p>
-          </div>
-        </div>
-        <div class="card main">
-          <div class="cardwrapper"><img src="./images/e9d9ba1b52a2ae2d023a351d5a1b1e1d.png" alt="gardenCare" width="329"></div>
-          <div class="card info">
-            <p class="head">Garden care</p>
-            <p class="information">Lorem Ipsum has been the industry</p>
-          </div>
-        </div>
-        <div class="card main">
-          <div class="cardwrapper"><img src="./images/48b0006857ce6af6e00ce412edf8ff18(1).png" alt="gardenCare" width="329"> </div>
-          <div class="card info">
-            <p class="head">Planting</p>
-            <p class="information">Lorem Ipsum has been the industry</p>
-          </div>
-        </div>
-      </div>
-    </div>
     </section>
     <section id="price">
       <div class="wrapper">
@@ -148,36 +184,36 @@
     </section>
     <section id="contacts">
       <div class="contactsWrapper">
-      <img class="woman" src="./images/bfb3e118e4acce558858a6c1a47c1998.png" alt="woman with flowers" width="400">
-      <h2>Contact us</h2>
-      <div class="city block">
-        <span>City</span>
-        <div class="hide">
-        <img class = 'accchange' src="./images/accordion_btn(1).svg" alt="accordeon btn">
-        <img class = 'accchange' src="./images/active_acc.svg" alt=" activeaccordeon btn">
+        <img class="woman" src="./images/bfb3e118e4acce558858a6c1a47c1998.png" alt="woman with flowers" width="400">
+        <h2>Contact us</h2>
+        <div class="city block">
+          <span>City</span>
+          <div class="hide">
+            <img class='accchange' src="./images/accordion_btn(1).svg" alt="accordeon btn">
+            <img class='accchange' src="./images/active_acc.svg" alt=" activeaccordeon btn">
+          </div>
+        </div>
       </div>
-      </div>
-    </div>
     </section>
     <footer class="footer">
       <div class="footerWrapper">
-      <div class="github">
-        <span>&copy;</span>
-        <span>2022</span>
-        <a href="https://github.com/Mideli37" target="_blank">github</a>
-      </div>
-      <div class="rs">
-        <a href="https://rs.school/js-stage0/" target="_blank">Rolling Scopes School</a>
-      </div>
-      <div class="socials">
+        <div class="github">
+          <span>&copy;</span>
+          <span>2022</span>
+          <a href="https://github.com/Mideli37" target="_blank">github</a>
+        </div>
+        <div class="rs">
+          <a href="https://rs.school/js-stage0/" target="_blank">Rolling Scopes School</a>
+        </div>
+        <div class="socials">
           <ul class="soc">
             <li><a href=""><img src="./images/inst1.svg" alt="instagram"></a></li>
             <li><a href=""><img src="./images/fb1.svg" alt="facebook"></a></li>
             <li><a href=""><img src="./images/tw1.svg" alt="tweeter"></a></li>
             <li><a href=""><img src="./images/pinterest1.svg" alt="pinterest"></a></li>
           </ul>
+        </div>
       </div>
-    </div>
     </footer>
   </main>
 </body>
