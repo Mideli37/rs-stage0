@@ -17,7 +17,7 @@ function burgerToggle() {
     nav.style.left = '100%'
     document.querySelector('.burgerIcon img').style.display = 'initial'
     document.querySelector('.cross').style.display = 'none'
-    document.querySelector('.modal').style.display = 'block'
+    document.querySelector('.modal').style.display = 'none'
   } else {
     document.querySelector('.burgerIcon img').style.display = 'none'
     document.querySelector('.cross').style.display = 'unset'
