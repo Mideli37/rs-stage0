@@ -265,6 +265,7 @@ main {
 .card.main {
   height: 450px;
   width: 26.92%;
+  transition: all 500ms;
 }
 .cards.wrapper {
   margin-top: 80px;
@@ -348,22 +349,32 @@ main {
 }
 
 .accordeon {
+  padding: 34px 0px;
+  gap: 34px 0px;
   margin-top: 60px;
   width: 330px;
-  height: 280px;
   border: 1px solid #e3e1d5;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  transition: all 500ms;
 }
 
 .price.block {
-  width: 170px;
-  height: 16px;
   background: #edf2ec;
   border-radius: 20px;
+  padding: 16px 40px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 500ms;
+}
+
+.basic {
+  width: 170px;
+  height: 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -373,10 +384,69 @@ main {
   font-size: 20px;
   line-height: 20px;
   color: #000000;
-  padding: 16px 40px;
-  cursor: pointer;
 }
 
+.moreInfo {
+  width: 100%;
+}
+
+.priceInfo {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 10px;
+  /* or 100% */
+  margin-bottom: 5px;
+
+  color: #717171;
+  width: 170px;
+  margin-top: 6px;
+}
+
+.divider {
+  margin-top: 10px;
+  width: 164px;
+  border: 0.5px solid #aea1a1;
+}
+
+.pricePerHour {
+  margin-top: 0px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  margin-bottom: 6px;
+}
+
+.order {
+  text-decoration: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  /* or 143% */
+  width: 86px;
+  padding: 4px 23px;
+  height: 25px;
+  background: #ffffff;
+  border-radius: 10px;
+  color: #717171;
+}
+
+.bigPrice {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.bold {
+  font-weight: 700;
+}
 .contactus {
   display: flex;
   flex-direction: column;
@@ -555,7 +625,15 @@ main {
 
 .blur {
   filter: blur(5px);
+}
+
+.active.block {
+  background-color: rgba(214, 231, 210, 1);
   transition: all 500ms ease;
+}
+
+.none {
+  display: none;
 }
 
 @media (max-width: 1282px) {
@@ -860,7 +938,7 @@ main {
     justify-content: flex-start;
   }
 
-  .serviceButtons  button {
+  .serviceButtons button {
     width: 121px;
     height: 35px;
     font-size: 15px;
@@ -897,7 +975,8 @@ main {
     padding: 17px 0;
     margin-top: 17px;
     width: 221px;
-    height: 199px;
+    padding: 28px 0;
+    gap: 11px 0px;
   }
 
   .contactus {
@@ -933,11 +1012,24 @@ main {
     width: 120px;
     height: 35px;
   }
+
   .price.block {
-    font-size: 15px;
-    line-height: 20px;
     padding: 18px 38px 18px 29px;
     width: 111px;
+  }
+
+  .basic {
+    font-size: 15px;
+    line-height: 20px;
+    width: unset;
+  }
+
+  .divider {
+    width: 110px;
+  }
+
+  .priceInfo {
+    width: 110px;
   }
 
   .card.main {

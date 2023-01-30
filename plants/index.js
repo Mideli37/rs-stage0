@@ -30,8 +30,6 @@ serviceButtons.forEach((button) => {
     serviceButtons.forEach((button) => {
       if (button.className.includes('active')) {
         cards.forEach((card) => {
-          console.log(button.className);
-          console.log(card.querySelector('.head').innerHTML.slice(0, 4).toLowerCase());
           if (
             button.className.includes(
               card.querySelector('.head').innerHTML.slice(0, 4).toLowerCase(),
@@ -45,7 +43,34 @@ serviceButtons.forEach((button) => {
   });
 });
 
-
+const accordeonToggle = (block) => {
+  block.classList.toggle('active');
+  block.lastElementChild.classList.toggle('none');
+  let basic = block.firstElementChild;
+  basic.children[1].classList.toggle('none');
+  basic.children[2].classList.toggle('none');
+};
+let orderButtons = document.querySelectorAll('.order');
+let accordeonButtons = document.querySelectorAll('.price.block');
+accordeonButtons.forEach((block) => {
+  block.addEventListener('click', (event) => {
+    if (Array.from(orderButtons).includes(event.target)) {
+    } else {
+      if (Array.from(accordeonButtons).filter((x) => x.className.includes('active')).length == 0) {
+        accordeonToggle(block);
+      } else if (block.className.includes('active')) {
+        accordeonToggle(block);
+      } else {
+        accordeonButtons.forEach((button) => {
+          if (button.className.includes('active')) {
+            accordeonToggle(button);
+          }
+        });
+        accordeonToggle(block);
+      }
+    }
+  });
+});
 
 function burgerToggle() {
   let nav = document.querySelector('.burgerNavigation');
