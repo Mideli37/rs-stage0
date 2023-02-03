@@ -8,7 +8,7 @@
     rel="stylesheet">
   <link href="style.css" rel="stylesheet" type="text/css">
   <link rel="icon" href="./images/favicon/favicon.ico" type="image/x-icon">
-  <script src="./index.js"></script>
+
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -101,7 +101,7 @@
           <ul class="serviceButtons">
             <li><button class="button garden">Gardens</button></li>
             <li><button class="button lawn">Lawn</button></li>
-            <li><button class="button">Planting</button></li>
+            <li><button class="button planting">Planting</button></li>
           </ul>
         </div>
         <div class="cards wrapper">
@@ -162,16 +162,49 @@
           <h2>Prices</h2>
           <div class="accordeon">
             <div class="price block">
-              <span>Basics</span>
-              <img src="./images/accordion_btn.svg" alt="accordeon btn">
+              <div class='basic'>
+                <span>Basics</span>
+                <img src="./images/accordion_btn.svg" alt="accordeon btn">
+                <img class='hiden none' src="./images/accordion_btn(2).svg" alt="accordeon btn">
+              </div>
+              <div class="moreinfo none">
+                <div class="divider"></div>
+                <p class="priceInfo ">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                <p class="pricePerHour">
+                  <span class="orangeText bold">$<span class="bigPrice">15</span></span> / per hour
+                </p>
+                <a class="order" href="#contacts">Order</a>
+              </div>
             </div>
             <div class="price block">
-              <span>Standard</span>
-              <img src="./images/accordion_btn.svg" alt="accordeon btn">
+              <div class='basic'>
+                <span>Standard</span>
+                <img src="./images/accordion_btn.svg" alt="accordeon btn">
+                <img class='hiden none' src="./images/accordion_btn(2).svg" alt="accordeon btn">
+              </div>
+              <div class="moreinfo none">
+                <div class="divider"></div>
+                <p class="priceInfo ">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                <p class="pricePerHour">
+                  <span class="orangeText bold">$<span class="bigPrice">25</span></span> / per hour
+                </p>
+                <a class="order" href="#contacts">Order</a>
+              </div>
             </div>
             <div class="price block">
-              <span>Pro care</span>
-              <img src="./images/accordion_btn.svg" alt="accordeon btn">
+              <div class='basic'>
+                <span>Pro care</span>
+                <img src="./images/accordion_btn.svg" alt="accordeon btn">
+                <img class='hiden none' src="./images/accordion_btn(2).svg" alt="accordeon btn">
+              </div>
+              <div class="moreinfo none">
+                <div class="divider"></div>
+                <p class="priceInfo ">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                <p class="pricePerHour">
+                  <span class="orangeText bold">$<span class="bigPrice">35</span></span> / per hour
+                </p>
+                <a class="order" href="#contacts">Order</a>
+              </div>
             </div>
           </div>
         </div>
@@ -216,5 +249,6 @@
       </div>
     </footer>
   </main>
+  <script src="./index.js"></script>
 </body>
 </html>
