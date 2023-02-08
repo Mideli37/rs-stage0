@@ -22,20 +22,20 @@ function getTimeOfDay() {
   let hours = date.getHours();
   let timeOfDay;
   if (hours < 6) {
-    timeOfDay = 'Good night';
+    timeOfDay = 'night';
   } else if (hours < 12) {
-    timeOfDay = 'Good morning';
+    timeOfDay = 'morning';
   } else if (hours < 18) {
-    timeOfDay = 'Good afternoon';
+    timeOfDay = 'afternoon';
   } else {
-    timeOfDay = 'Good evening';
+    timeOfDay = 'evening';
   }
-  return timeOfDay;
+  return timeOfDay
 }
 
 function showGreetings() {
   const greeting = document.querySelector('.greeting-container span');
-  greeting.innerHTML = getTimeOfDay();
+  greeting.innerHTML = `Good ${getTimeOfDay()}`
 }
 showTime();
 
@@ -54,3 +54,51 @@ function getLocalStorage() {
   }
 }
 window.addEventListener('load', getLocalStorage);
+
+// ************Slider**************
+
+let randomNumber = getRandomNumber()
+const slideNext = document.querySelector('.slide-next')
+const slidePrev = document.querySelector('.slide-prev')
+
+function getRandomNumber() {
+  return Math.floor(Math.random()*20) + 1
+}
+
+function setBg() {  
+  const img = new Image();
+  let num = String(bgNum).padStart(2, '0')
+  const url = `url('https://raw.githubusercontent.com/Mideli37/stage1-tasks/assets/images/${timeOfDay}/${num}.jpg')`
+  img.src = url
+  img.onload = () => {      
+    document.body.style.backgroundImage = url
+  }; 
+}
+
+function setBg(timeOfDay, bgNum) {
+  let num = String(bgNum).padStart(2, '0')
+  url = `https://raw.githubusercontent.com/Mideli37/stage1-tasks/assets/images/${timeOfDay}/${num}.jpg`
+  document.body.style.backgroundImage = `url('${url}')`
+}
+
+function getSlideNext() {
+  if (randomNumber == 20) {
+    randomNumber = 1
+  } else {
+    randomNumber++
+  }
+  setBg(getTimeOfDay(), randomNumber)
+}
+
+function getSlidePrev() {
+  if (randomNumber == 1) {
+    randomNumber = 20
+  } else {
+    randomNumber--
+  }
+  setBg(getTimeOfDay(), randomNumber)
+}
+
+setBg(getTimeOfDay(), randomNumber)
+slideNext.addEventListener('click', getSlideNext)
+slidePrev.addEventListener('click', getSlidePrev)
