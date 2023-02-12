@@ -133,3 +133,20 @@ async function getWeather() {
   }
 }
 getWeather();
+
+// ********Quotes**********
+
+const quote = document.querySelector('.quote');
+const author = document.querySelector('.author');
+const quoteChangeButton = document.querySelector('.change-quote');
+
+async function getQuotes() {
+  const quotes = '/assets/data.json';
+  const res = await fetch(quotes);
+  const data = await res.json();
+  fullQuote = data.quotes[Math.floor(Math.random() * 120)];
+  quote.textContent = fullQuote.quote;
+  author.textContent = fullQuote.author;
+}
+getQuotes();
+quoteChangeButton.addEventListener('click', getQuotes);
