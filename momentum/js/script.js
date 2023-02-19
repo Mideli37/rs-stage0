@@ -133,7 +133,7 @@ async function getWeather() {
   }
 }
 getWeather();
-
+weatherCity.addEventListener('change', getWeather);
 // ********Quotes**********
 
 const quote = document.querySelector('.quote');
@@ -144,9 +144,87 @@ async function getQuotes() {
   const quotes = '/assets/data.json';
   const res = await fetch(quotes);
   const data = await res.json();
-  fullQuote = data.quotes[Math.floor(Math.random() * 120)];
+  let fullQuote = data.quotes[Math.floor(Math.random() * 120)];
   quote.textContent = fullQuote.quote;
   author.textContent = fullQuote.author;
 }
 getQuotes();
 quoteChangeButton.addEventListener('click', getQuotes);
+
+//*******Audioplayer*******
+
+import playList from './playList.js';
+const playListContainer = document.querySelector('.play-list');
+const audio = new Audio();
+const playButton = document.querySelector('.play');
+const playNextButton = document.querySelector('.play-next');
+const playPrevButton = document.querySelector('.play-prev');
+let playNum = 0;
+let isPlay = false;
+
+playList.forEach((el) => {
+  const li = document.createElement('li');
+  li.classList.add('play-item');
+  li.textContent = el.title;
+  playListContainer.append(li);
+});
+
+function playAudio() {
+  audio.src = playList[playNum].src;
+  if (!isPlay) {
+    audio.currentTime = 0;
+    audio.play();
+    isPlay = true;
+  } else {
+    audio.pause();
+    isPlay = false;
+  }
+  activeSong(playNum)
+  toggleButton();
+}
+
+function toggleButton() {
+  if (isPlay) {
+    playButton.classList.add('pause');
+  } else {
+    playButton.classList.remove('pause');
+  }
+}
+
+function playNext() {
+  if (playNum == playList.length - 1) {
+    playNum = 0;
+  } else {
+    playNum++;
+  }
+  isPlay = false;
+  playAudio();
+}
+
+function playPrev() {
+  if (playNum == 0) {
+    playNum = playList.length - 1;
+  } else {
+    playNum--;
+  }
+  isPlay = false;
+  playAudio();
+}
+
+function activeSong(number) {
+  let playListElements = Array.from(playListContainer.children)
+  playListElements.forEach((el) => {
+    if (el.innerHTML == playList[number].title) {
+      el.classList.add('item-active')
+    } else {
+      el.className = "play-item"
+    }
+  })
+} 
+
+
+
+playButton.addEventListener('click', playAudio);
+playNextButton.addEventListener('click', playNext);
+playPrevButton.addEventListener('click', playPrev);
+audio.addEventListener('ended', playNext);
