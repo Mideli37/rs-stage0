@@ -141,7 +141,7 @@ const author = document.querySelector('.author');
 const quoteChangeButton = document.querySelector('.change-quote');
 
 async function getQuotes() {
-  const quotes = '/assets/data.json';
+  const quotes = './assets/data.json';
   const res = await fetch(quotes);
   const data = await res.json();
   let fullQuote = data.quotes[Math.floor(Math.random() * 120)];
